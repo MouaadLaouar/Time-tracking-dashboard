@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -44,19 +44,138 @@ header section:nth-child(1) div:nth-child(1) {
   flex-direction: column;
 }
 
-header section:nth-child(1) div:nth-child(1) img {
+header section:nth-child(1) div:nth-child(1) nav:nth-child(1) {
   height: 100px;
   width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header section:nth-child(1) div:nth-child(1) nav:nth-child(1) img {
+  height: 95px;
+  width: 95px;
+}
+
+header section:nth-child(1) div:nth-child(1) nav:nth-child(2) p {
+  color: #bdc1ff;
+  font-size: 15px;
+}
+
+header section:nth-child(1) div:nth-child(1) nav:nth-child(2) h1 {
+  font-style: normal;
+  color: white;
+  font-size: 30px;
 }
 
 header section:nth-child(1) div:nth-child(2) {
   padding: 20px;
+  display: grid;
 }
 
-.card div:nth-child(1) {
-  background-image: url(../images/icon-work.svg);
+header section:nth-child(1) div:nth-child(2) button {
+  margin-bottom: 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+  text-align: start;
+  color: #6f76c8;
+  cursor: pointer;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fs;
+}
+
+.card ._1 {
   background-repeat: no-repeat;
-  height: 20px;
+  background-position: right;
+  height: 200%;
   width: 100%;
-  background-color: red;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-work.svg);
+  background-color: #ff8c66;
+}
+
+.card ._2 {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 200%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-play.svg);
+  background-color: #56c2e6;
+}
+
+.card ._3 {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 200%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-study.svg);
+  background-color: #ff5c7c;
+}
+
+.card ._4 {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 200%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-exercise.svg);
+  background-color: #4acf81;
+}
+
+.card ._5 {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 200%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-social.svg);
+  background-color: #7536d3;
+}
+
+.card ._6 {
+  background-repeat: no-repeat;
+  background-position: right;
+  height: 200%;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url(../images/icon-self-care.svg);
+  background-color: #f1c65b;
+}
+
+.card div:nth-child(2) {
+  padding: 10px 30px 10px 30px;
+  color: white;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #1c1f4a;
+  height: 90%;
+  display: grid;
+  grid-gap: 5px;
+}
+
+.card div:nth-child(2) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card div:nth-child(2) div svg {
+  cursor: pointer;
+}
+
+.card div:nth-child(2) p {
+  color: #bdc1ff;
+  font-size: 15px;
+}
+
+.card > div:nth-child(2) > h1 {
+  font-size: 30px;
 }

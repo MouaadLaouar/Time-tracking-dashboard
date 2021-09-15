@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import "./variable";
 
 
@@ -29,6 +29,7 @@ header {
     section {
         background-color: $Dark-blue;
         border-radius: 10px;
+
     }
 
     section:nth-child(1) {
@@ -44,21 +45,131 @@ header {
             justify-content: space-around;
             flex-direction: column;
 
-            img {
+            nav:nth-child(1) {
                 height: 100px;
                 width: 100px;
+                border-radius: 50%;
+                background-color:white ;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                img {
+                    height: 95px;
+                    width: 95px;
+                }
             }
+
+
+            nav:nth-child(2) {
+                p {
+                    color: $Pale-Blue;
+                    font-size: 15px;
+                }
+                
+                h1 {
+                    font-style: normal;
+                    color: white;
+                    font-size: 30px;
+                }
+            }
+
         }
         div:nth-child(2) {
             padding: 20px;
+            display: grid;
+            
+            button { 
+                margin-bottom: 10px;
+                border: none;
+                background-color: rgba(255, 255, 255, 0);
+                text-decoration: none;
+                text-align: start;
+                color: $Desaturated-blue;
+                cursor: pointer;
+            }
         }
     }
 }
 
-.card div:nth-child(1) {
-    background-image: url(../images/icon-work.svg);
-    background-repeat: no-repeat;
-    height: 20px;
-    width: 100%;
-    background-color: red;
+@mixin icon {
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 200%;
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
 }
+
+.card { 
+    display: grid;
+    grid-template-columns: 1fs;
+
+    ._1 {
+        @include icon;
+        background-image: url(../images/icon-work.svg);
+        background-color: $Light-orange;
+    }
+
+    ._2 {
+        @include icon;
+        background-image: url(../images/icon-play.svg);
+        background-color: $Soft-blue;
+    }
+
+    ._3 {
+        @include icon;
+        background-image: url(../images/icon-study.svg);
+        background-color: $Light-red;
+    }
+
+    ._4 {
+        @include icon;
+        background-image: url(../images/icon-exercise.svg);
+        background-color: $Lime-green;
+    }
+
+    ._5 {
+        @include icon;
+        background-image: url(../images/icon-social.svg);
+        background-color: $Violet;
+    }
+
+    ._6 {
+        @include icon;
+        background-image: url(../images/icon-self-care.svg);
+        background-color: $Soft-orange;
+    }
+
+    div:nth-child(2) {
+
+        padding: 10px 30px 10px 30px; 
+        color: white;
+        border-radius: 10px 10px 0px 0px ;
+        background-color: $Dark-blue;
+        height: 90%;
+        display: grid;
+        grid-gap: 5px;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            svg {
+                cursor: pointer;
+            }
+        }
+
+        p {
+            color: $Pale-Blue;
+            font-size: 15px;
+        }
+    } 
+}
+
+.card > div:nth-child(2) > h1 {
+    font-size: 30px;
+}
+
+//test
