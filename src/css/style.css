@@ -154,7 +154,7 @@ header section:nth-child(1) div:nth-child(2) button {
 .card div:nth-child(2) {
   padding: 10px 30px 10px 30px;
   color: white;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px;
   background-color: #1c1f4a;
   height: 90%;
   display: grid;
