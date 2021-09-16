@@ -178,7 +178,7 @@ header section:nth-child(1) div:nth-child(2) button {
   font-size: 15px;
 }
 
-.card > div:nth-child(2) > h1 {
+.card > div:nth-child(2) > h1, span {
   font-size: 30px;
 }
 
