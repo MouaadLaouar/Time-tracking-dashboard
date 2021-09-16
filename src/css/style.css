@@ -221,5 +221,6 @@ header section:nth-child(1) div:nth-child(2) button {
   }
   header section:nth-child(1) div:nth-child(2) button {
     margin-bottom: unset;
+    text-align: center;
   }
 }
