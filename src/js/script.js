@@ -128,6 +128,7 @@ const daily = () => {
   //Self Care
   document.getElementById("cureentSelf").innerHTML = data[5].timeframes.daily.current;
   document.getElementById("previousSelf").innerHTML = data[5].timeframes.daily.previous;
+
 }
 
 const weekly = () => {
