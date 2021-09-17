@@ -111,66 +111,66 @@ const monthly_btn = document.getElementById("monthly-btn");
 
 const daily = () => {
   //work
-  document.getElementById("cureentwork").innerHTML = data[0].timeframes.daily.current;
-  document.getElementById("previouswork").innerHTML = data[0].timeframes.daily.previous;
+  document.getElementById("cureentwork").textContent = data[0].timeframes.daily.current;  
+  document.getElementById("previouswork").textContent = data[0].timeframes.daily.previous;
   //Play
-  document.getElementById("cureentPlay").innerHTML = data[1].timeframes.daily.current;
-  document.getElementById("previousPlay").innerHTML = data[1].timeframes.daily.previous;
+  document.getElementById("cureentPlay").textContent = data[1].timeframes.daily.current;
+  document.getElementById("previousPlay").textContent = data[1].timeframes.daily.previous;
   //Study 
-  document.getElementById("cureentStudy").innerHTML = data[2].timeframes.daily.current;
-  document.getElementById("previousStudy").innerHTML = data[2].timeframes.daily.previous;
+  document.getElementById("cureentStudy").textContent= data[2].timeframes.daily.current;
+  document.getElementById("previousStudy").textContent = data[2].timeframes.daily.previous;
   //Exercise
-  document.getElementById("cureentExercise").innerHTML = data[3].timeframes.daily.current;
-  document.getElementById("previousExercise").innerHTML = data[3].timeframes.daily.previous;
+  document.getElementById("cureentExercise").textContent = data[3].timeframes.daily.current;
+  document.getElementById("previousExercise").textContent = data[3].timeframes.daily.previous;
   //Social
-  document.getElementById("cureentSocial").innerHTML = data[4].timeframes.daily.current;
-  document.getElementById("previousSocial").innerHTML = data[4].timeframes.daily.previous;
+  document.getElementById("cureentSocial").textContent = data[4].timeframes.daily.current;
+  document.getElementById("previousSocial").textContent = data[4].timeframes.daily.previous;
   //Self Care
-  document.getElementById("cureentSelf").innerHTML = data[5].timeframes.daily.current;
-  document.getElementById("previousSelf").innerHTML = data[5].timeframes.daily.previous;
+  document.getElementById("cureentSelf").textContent = data[5].timeframes.daily.current;
+  document.getElementById("previousSelf").textContent = data[5].timeframes.daily.previous;
 
 }
 
 const weekly = () => {
   //work
-  document.getElementById("cureentwork").innerHTML = data[0].timeframes.weekly.current;
-  document.getElementById("previouswork").innerHTML = data[0].timeframes.weekly.previous;
+  document.getElementById("cureentwork").textContent = data[0].timeframes.weekly.current;
+  document.getElementById("previouswork").textContent = data[0].timeframes.weekly.previous;
   //Play
-  document.getElementById("cureentPlay").innerHTML = data[1].timeframes.weekly.current;
-  document.getElementById("previousPlay").innerHTML = data[1].timeframes.weekly.previous;
+  document.getElementById("cureentPlay").textContent = data[1].timeframes.weekly.current;
+  document.getElementById("previousPlay").textContent = data[1].timeframes.weekly.previous;
   //Study 
-  document.getElementById("cureentStudy").innerHTML = data[2].timeframes.weekly.current;
-  document.getElementById("previousStudy").innerHTML = data[2].timeframes.weekly.previous;
+  document.getElementById("cureentStudy").textContent = data[2].timeframes.weekly.current;
+  document.getElementById("previousStudy").textContent = data[2].timeframes.weekly.previous;
   //Exercise
-  document.getElementById("cureentExercise").innerHTML = data[3].timeframes.weekly.current;
-  document.getElementById("previousExercise").innerHTML = data[3].timeframes.weekly.previous;
+  document.getElementById("cureentExercise").textContent = data[3].timeframes.weekly.current;
+  document.getElementById("previousExercise").textContent = data[3].timeframes.weekly.previous;
   //Social
-  document.getElementById("cureentSocial").innerHTML = data[4].timeframes.weekly.current;
-  document.getElementById("previousSocial").innerHTML = data[4].timeframes.weekly.previous;
+  document.getElementById("cureentSocial").textContent = data[4].timeframes.weekly.current;
+  document.getElementById("previousSocial").textContent = data[4].timeframes.weekly.previous;
   //Self Care
-  document.getElementById("cureentSelf").innerHTML = data[5].timeframes.weekly.current;
-  document.getElementById("previousSelf").innerHTML = data[5].timeframes.weekly.previous;
+  document.getElementById("cureentSelf").textContent = data[5].timeframes.weekly.current;
+  document.getElementById("previousSelf").textContent = data[5].timeframes.weekly.previous;
 }
 
 const monthly = () => {
   //work
-  document.getElementById("cureentwork").innerHTML = data[0].timeframes.monthly.current;
-  document.getElementById("previouswork").innerHTML = data[0].timeframes.monthly.previous;
+  document.getElementById("cureentwork").textContent = data[0].timeframes.monthly.current;
+  document.getElementById("previouswork").textContent = data[0].timeframes.monthly.previous;
   //Play
-  document.getElementById("cureentPlay").innerHTML = data[1].timeframes.monthly.current;
-  document.getElementById("previousPlay").innerHTML = data[1].timeframes.monthly.previous;
+  document.getElementById("cureentPlay").textContent = data[1].timeframes.monthly.current;
+  document.getElementById("previousPlay").textContent = data[1].timeframes.monthly.previous;
   //Study 
-  document.getElementById("cureentStudy").innerHTML = data[2].timeframes.monthly.current;
-  document.getElementById("previousStudy").innerHTML = data[2].timeframes.monthly.previous;
+  document.getElementById("cureentStudy").textContent = data[2].timeframes.monthly.current;
+  document.getElementById("previousStudy").textContent = data[2].timeframes.monthly.previous;
   //Exercise
-  document.getElementById("cureentExercise").innerHTML = data[3].timeframes.monthly.current;
-  document.getElementById("previousExercise").innerHTML = data[3].timeframes.monthly.previous;
+  document.getElementById("cureentExercise").textContent = data[3].timeframes.monthly.current;
+  document.getElementById("previousExercise").textContent = data[3].timeframes.monthly.previous;
   //Social
-  document.getElementById("cureentSocial").innerHTML = data[4].timeframes.monthly.current;
-  document.getElementById("previousSocial").innerHTML = data[4].timeframes.monthly.previous;
+  document.getElementById("cureentSocial").textContent = data[4].timeframes.monthly.current;
+  document.getElementById("previousSocial").textContent = data[4].timeframes.monthly.previous;
   //Self Care
-  document.getElementById("cureentSelf").innerHTML = data[5].timeframes.monthly.current;
-  document.getElementById("previousSelf").innerHTML = data[5].timeframes.monthly.previous;
+  document.getElementById("cureentSelf").textContent = data[5].timeframes.monthly.current;
+  document.getElementById("previousSelf").textContent = data[5].timeframes.monthly.previous;
 }
 
 daily_btn.addEventListener('click', daily);
